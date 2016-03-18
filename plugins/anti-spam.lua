@@ -20,7 +20,7 @@ local function pre_process(msg)
                         local user = msg.from.id
                        
 			if msg.to.type == 'user' then
-                            send_msg(receiver, lang_text(chat, 'user')..' @'..msg.from.username..' ('..msg.from.id..') '..lang_text(chat, 'isFlooding'), ok_cb, true)
+                            send_msg(receiver, "Blocked :D", ok_cb, true)
                          block_user(receiver,ok_cb,false)
                         end
                     end
